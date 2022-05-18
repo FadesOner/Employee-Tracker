@@ -47,6 +47,10 @@ function init() {
                 const employees = await viewEmployees();
                 console.table(employees);
             }
+            if(answers.action === 'Add Department'){
+                const newDepartment = await addDeparment();
+                console.table(newDepartment);
+            }
             
 
 
